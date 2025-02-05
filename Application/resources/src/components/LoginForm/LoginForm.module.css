@@ -1,0 +1,94 @@
+.loginContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .loginContainer:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .login_title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginForm :global(.ant-form-item) {
+    margin-bottom: 1.5rem;
+  }
+
+  .loginForm :global(.ant-input-affix-wrapper) {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+  }
+
+  .loginForm :global(.ant-input-affix-wrapper:hover) {
+    border-color: #4E71CF;
+  }
+
+  .loginForm :global(.ant-input-affix-wrapper-focused),
+  .loginForm :global(.ant-input-affix-wrapper:focus) {
+    border-color: #4E71CF;
+    box-shadow: 0 0 0 2px rgba(78, 113, 207, 0.2);
+  }
+
+  .loginForm :global(.ant-btn) {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .loginForm :global(.ant-btn:hover) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .registerLink {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .registerLink a {
+    color: #4E71CF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .registerLink a:hover {
+    color: #243460;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .loginContainer {
+      padding: 1.5rem;
+    }
+
+    .login_title {
+      font-size: 1.75rem;
+    }
+
+    .loginForm :global(.ant-btn) {
+      height: 36px;
+      font-size: 14px;
+    }
+  }

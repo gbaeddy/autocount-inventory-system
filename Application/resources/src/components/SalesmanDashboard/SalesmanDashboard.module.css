@@ -1,0 +1,67 @@
+.mainCard {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .statCard {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    padding: 3%;
+  }
+
+  .statCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .chartCard {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+  }
+
+  .chartCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .tableCard {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .tableCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .tableCard :global(.ant-table-row) {
+    transition: all 0.3s ease;
+  }
+
+  .tableCard :global(.ant-table-row:hover) {
+    background-color: #f0f5ff;
+    transform: translateX(4px);
+  }
+  .monthSelect {
+    min-width: 200px;
+  }
+
+  .monthSelect :global(.ant-select-selector) {
+    border-radius: 4px !important;
+  }
+
+  .monthSelect:hover {
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  }
+
+  .filterCard {
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+
+  .filterCard:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .analysisCard{
+    margin-bottom: 1vh;
+  }

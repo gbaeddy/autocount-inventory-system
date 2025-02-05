@@ -1,0 +1,58 @@
+.forbiddenContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+
+  .forbiddenContent {
+    text-align: center;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+  }
+
+  .forbiddenIcon {
+    font-size: 72px;
+    color: #ff4d4f;
+    margin-bottom: 24px;
+    animation: pulse 2s infinite;
+  }
+
+  .forbiddenTitle {
+    color: #ff4d4f !important;
+    margin-bottom: 16px !important;
+  }
+
+  .forbiddenMessage {
+    margin-bottom: 24px;
+  }
+
+  .actionButtons {
+    margin-top: 24px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .forbiddenContent {
+      padding: 2rem;
+    }
+    .forbiddenIcon {
+      font-size: 56px;
+    }
+  }

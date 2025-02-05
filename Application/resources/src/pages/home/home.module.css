@@ -1,0 +1,161 @@
+.user {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/* New styles */
+.fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.welcomeCard {
+  background: #ffffff;
+  border: none;
+  padding: 2%;
+  margin-bottom: 24px;
+}
+
+.welcomeTitle {
+  font-size: 24px;
+  color: #101627;
+  margin: 0;
+  font-weight: 600;
+}
+
+.welcomeSubtitle {
+  color: #8c8c8c;
+  margin: 4px 0 0 0;
+}
+
+.profileImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+}
+
+.statusAlert {
+  margin-bottom: 24px;
+}
+
+.statsSection {
+  margin-bottom: 24px;
+}
+
+.statCard {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 5%;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chartCard {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.chartCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.activityCard {
+  border-radius: 12px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.activityCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timelineItem {
+  padding: 4px;
+}
+
+.timelineTitle {
+  margin: 0;
+  font-weight: 500;
+}
+
+.timelineMeta {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.tooltip {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #f0f0f0;
+}
+
+.tooltipTitle {
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.test {
+  background-color: #4e71cf;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lowInventoryCard {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  padding-bottom: 3%;
+}
+
+.lowInventoryCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lowInventoryTable :global(.ant-table-row) {
+  transition: all 0.3s ease;
+}
+
+.lowInventoryTable :global(.ant-table-row:hover) {
+  background-color: #fafafa;
+  transform: translateX(4px);
+}
+
+.lowInventoryTable :global(.ant-progress-bg) {
+  transition: all 0.3s ease;
+}
+
+.lowInventoryTable :global(.ant-tag) {
+  transition: all 0.3s ease;
+}
+
+.lowInventoryTable :global(.ant-tag:hover) {
+  transform: scale(1.05);
+}

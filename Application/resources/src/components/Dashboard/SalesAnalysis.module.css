@@ -1,0 +1,102 @@
+.analysisCard {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.analysisCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.innerCard {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.innerCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statistic {
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.statistic:hover {
+  transform: translateY(-2px);
+  background: #f0f5ff;
+}
+
+.rankingTable :global(.ant-table-row) {
+  transition: all 0.3s ease;
+}
+
+.rankingTable :global(.ant-table-row:hover) {
+  background-color: #f0f5ff;
+  transform: translateX(4px);
+}
+
+.rankingTable :global(.ant-tag) {
+  transition: all 0.3s ease;
+}
+
+.rankingTable :global(.ant-tag:hover) {
+  transform: scale(1.05);
+}
+
+.viewSelect {
+  min-width: 120px;
+}
+
+.tooltip {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #f0f0f0;
+}
+
+.tooltipTitle {
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.tooltipContent {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.statistic {
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.statistic:hover {
+  transform: translateY(-2px);
+  background: #f0f5ff;
+}
+
+.yearSelect {
+  min-width: 120px;
+  margin-left: 8px;
+}
+
+.yearSelect :global(.ant-select-selector) {
+  border-radius: 4px !important;
+}
+
+.yearSelect:hover {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.analysisCard .ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+.analysisCard .ant-tag {
+  margin-left: 8px;
+}

@@ -1,0 +1,46 @@
+.UserManagement .flexBox {
+  display: flex;
+  justify-content: space-between;
+}
+.CardDetails {
+  padding: 3%;
+}
+.modal-leave {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+.modal-closing .ant-modal-content {
+  animation: modalFadeOut 0.3s;
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.userDetailsModal {
+  transition: all 0.3s ease-out;
+}
+
+.userDetailsModal.closing {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.userDetailsModal .ant-modal-content {
+  transition: all 0.3s ease-out;
+}
+
+.userDetailsModal.closing .ant-modal-content {
+  transform: scale(0.95);
+}
+
+.userCard {
+  margin-bottom: 16px;
+}

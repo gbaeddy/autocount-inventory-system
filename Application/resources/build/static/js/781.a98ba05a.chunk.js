@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmyapp=self.webpackChunkmyapp||[]).push([[781],{70781:(e,t,a)=>{a.r(t),a.d(t,{default:()=>c});a(65043);var o=a(86491),n=a(3188),r=a(73216),s=a(70579);const c=()=>{const e=(0,r.Zp)();return(0,s.jsx)(o.Ay,{status:"error",title:"Application Rejected",subTitle:"Your application has been rejected. Please contact the administrator for more information.",extra:[(0,s.jsx)(n.Ay,{onClick:()=>e("/login"),children:"Back to Login"},"console")]})}}}]);
+//# sourceMappingURL=781.a98ba05a.chunk.js.map

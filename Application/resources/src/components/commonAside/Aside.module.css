@@ -1,0 +1,90 @@
+.Sider {
+  background: #18223e !important;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  height: 100vh !important;
+  overflow: hidden !important; /* 防止整个 Sider 滚动 */
+}
+
+.Logo {
+  text-align: center;
+  background: #18223e;
+  height: auto;
+  cursor: pointer;
+  position: sticky;
+  z-index: 2;
+}
+
+.Logo img {
+  transition: all 0.3s;
+}
+
+.Menu {
+  background: #18223e !important;
+  /* width: fit-content !important; */
+  height: calc(100vh - 140px) !important; /* 减去 Logo 区域的高度 */
+  overflow-y: auto !important;
+  padding-bottom: 24px;
+  overflow: auto !important; /* Allow scrolling in both directions */
+}
+.Menu :global(.ant-menu-submenu-title) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 修复子菜单显示问题 */
+
+/* .Menu :global(.ant-menu-submenu-title) {
+  line-height: 20px !important;
+  padding: 12px 30px !important;
+  margin: 0 !important;
+} */
+
+/* 调整展开箭头位置 */
+/* .Menu :global(.ant-menu-submenu-arrow) {
+  right: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+} */
+
+/* 移动端样式调整 */
+@media screen and (max-width: 768px) {
+  .Sider {
+    position: fixed !important;
+    height: 100% !important;
+  }
+
+  .menuButton {
+    position: fixed;
+    left: 16px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .menuButtonOpen {
+    top: 90%;
+    background-color: #4e71cf;
+    border-color: #4e71cf;
+  }
+
+  .menuButtonClosed {
+    top: 16px;
+    background-color: #4e71cf;
+    border-color: #4e71cf;
+  }
+}
+
+/* 滚动条样式优化 */
+.Menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.Menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.Menu::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}

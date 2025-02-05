@@ -1,0 +1,21 @@
+# React.js
+Application/resources/node_modules/
+Application/resources/.env
+Application/resources/production.crt
+Application/resources/production.key
+
+#Laravel
+Application/storage/*
+Application/vendor/
+Application/.env
+Application/production.crt
+Application/production.key
+
+#C#
+Autocount/AutoCountAPI/bin/
+Autocount/AutoCountAPI/obj/
+Autocount/AutoCountAPI/.vs/
+Autocount/packages/
+Autocount/AutoCountAPI/appsettings.json
+Autocount/AutoCountAPI/AutoCountAPI_TemporaryKey.pfx
+Autocount/AutoCountAPI/AutoCountAPI.csproj.user

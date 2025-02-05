@@ -1,0 +1,14 @@
+.CardDetails {
+  padding: 3% !important;
+}
+
+.ActiveButton {
+  background-color: #18223e !important;
+  border-color: #18223e !important;
+  color: white !important;
+}
+
+.ActiveButton:hover {
+  background-color: #3a5cbc !important;
+  border-color: #3a5cbc !important;
+}

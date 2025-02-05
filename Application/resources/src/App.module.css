@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  /* Start 20px below the final position */
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+  /* Move to original position */
+}
+
+.ActionButton {
+  background-color: #4e71cf !important;
+  border-color: #4e71cf !important;
+  color: #ffffff !important;
+}
+
+.ActionButton:hover {
+  transform: translateY(-1px) scale(1.05);
+  background-color: #16223d !important;
+  border-color: #16223d !important;
+}
+
+.DeleteButton {
+  color: #ff0000 !important;
+  background-color: #ffffff !important;
+  border-color: #ff0000 !important;
+}
+
+.DeleteButton:hover {
+  transform: translateY(-1px) scale(1.05);
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+  color: #ffffff !important;
+}

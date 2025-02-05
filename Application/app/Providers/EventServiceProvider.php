@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use App\Events\UserStatusChanged;
+use App\Listeners\SendStatusUpdateEmail;
+
+class EventServiceProvider extends ServiceProvider
+{
+    protected $listen = [
+        UserStatusChanged::class => [
+            SendStatusUpdateEmail::class,
+        ],
+    ];
+    /**
+     * Register services.
+     */
+    public function register(): void
+    {
+        
+    }
+
+    /**
+     * Bootstrap services.
+     */
+    public function boot(): void
+    {
+        //
+    }
+}

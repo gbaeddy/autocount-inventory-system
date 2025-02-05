@@ -1,0 +1,94 @@
+.registerContainer {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .registerContainer:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .register_title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .registerForm :global(.ant-form-item) {
+    margin-bottom: 1.5rem;
+  }
+
+  .registerForm :global(.ant-input-affix-wrapper) {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s;
+  }
+
+  .registerForm :global(.ant-input-affix-wrapper:hover) {
+    border-color: #4E71CF;
+  }
+
+  .registerForm :global(.ant-input-affix-wrapper-focused),
+  .registerForm :global(.ant-input-affix-wrapper:focus) {
+    border-color: #4E71CF;
+    box-shadow: 0 0 0 2px rgba(78, 113, 207, 0.2);
+  }
+
+  .registerForm :global(.ant-btn) {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .registerForm :global(.ant-btn:hover) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .loginLink {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .loginLink a {
+    color: #4E71CF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .loginLink a:hover {
+    color: #243460;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .registerContainer {
+      padding: 1.5rem;
+    }
+
+    .register_title {
+      font-size: 1.75rem;
+    }
+
+    .registerForm :global(.ant-btn) {
+      height: 36px;
+      font-size: 14px;
+    }
+  }
